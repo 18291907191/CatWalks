@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="description" content="走秀网，全球时尚在线百货商城，中国第一大国际时尚品牌线上零售机构。一折起销售正品国际品牌女装、男装、奢侈品、化妆品、运动、休闲、箱包、鞋、家居、配饰等商品，支持货到付款，7天无条件退换货保障. />
+	<meta name="keywords" content="网上购物,网上商城,货到付款,名品打折网,奢侈品,LV,GUCCI,PRADA,CK,兰蔻,雅诗兰黛,倩碧,耐克,阿迪达斯,李宁,ZARA,百丽,走秀网,走秀网官网" />
+	<title>订单提交第二步</title>
+	<link rel="shortcut icon" href="icon-font/favicon.ico" />
+	<link rel="stylesheet" href="dist/css/buy-list.css" />
+</head>
+<body>
+	<!--购物车头部信息-->
+	<div class="header">
+		<div class="header_con">
+			<div class="header-left"><a class="logo" href="index.html"></a></div>
+			<div class="header-right">
+				<p>客服热线(免费长途): <b>400-888-4499</b> <a href="">在线客服</a></p>
+				<p>您好欢迎光临走秀网 <a href="">[ 登陆/注册 ]</a> <a href="">帮助中心</a></p>
+			</div>
+		</div>
+	</div>
+	<!--页面主体内容-->
+	<div class="section-main">
+		<div class="section-con">
+			<div class="section-hd">
+			<ul>
+				<li>1.我的购物袋<span class="img_one"></span></li>
+				<li>2.填写并核对订单信息<span class="img_two"></span></li>
+				<li>3.成功提交订单<span class="img_three"></span></li>
+			</ul>
+			</div>
+			<div class="section-bd">
+				<h3 class="main-header">填写并核对订单信息</h3>
+				<h4>收货人信息</h4>
+				<div class="peo-info">
+					<div><label for="name"><span>*</span>收货人姓名：</label><input required="required" type="" name="" id="name" value="" /><em style="display: none;" id="hidden">收货人姓名不能包含特殊字符!</em></div>
+					<div><label for="city"><span>*</span>省份/直辖市：</label>
+						<select name="" id="province">
+							<option value="请选择">请选择</option>
+							<option value="110000">北京市</option>
+							<option value="120000">天津市</option>
+							<option value="130000">河北省</option>
+							<option value="140000">山西省</option>
+							<option value="150000">内蒙古自治区</option>
+							<option value="210000">辽宁省</option>
+							<option value="220000">吉林省</option>
+							<option value="230000">黑龙江省</option>
+							<option value="310000">上海市</option>
+							<option value="320000">江苏省</option>
+							<option value="330000">浙江省</option>
+							<option value="340000">安徽省</option>
+							<option value="350000">福建省</option>
+							<option value="360000">江西省</option>
+							<option value="370000">山东省</option>
+							<option value="410000">河南省</option>
+							<option value="420000">湖北省</option>
+							<option value="430000">湖南省</option>
+							<option value="440000">广东省</option>
+							<option value="450000">广西壮族自治区</option>
+							<option value="460000">海南省</option>
+							<option value="500000">重庆市</option>
+							<option value="510000">四川省</option>
+							<option value="520000">贵州省</option>
+							<option value="530000">云南省</option>
+							<option value="540000">西藏自治区</option>
+							<option value="610000">陕西省</option>
+							<option value="620000">甘肃省</option>
+							<option value="630000">青海省</option>
+							<option value="640000">宁夏回族自治区</option>
+							<option value="650000">新疆维吾尔自治区</option>
+						</select> 
+						<select name="" id="city">
+							<option value="请选择">
+								请选择
+							</option>
+						</select> 
+						<select name="" id="area">
+							<option value="请选择">
+								请选择
+							</option>
+						</select><em></em>
+					</div>
+					<div><label for="address"><span>*</span>详细地址：</label><input required="required" type="" name="" id="address" value="" /><em id="error">温馨提示: <span id="num">35</span>个以内中文字符</em></div>
+					<div><label for="code"><span>*</span>邮政编码：</label><input required="required" type="" name="" id="code" value="" /><a href="http://youbian.118cha.com/">查询邮编</a></div>
+					<div><label for="mobile"><span>*</span>手机号码：</label><input required="required" type="" name="" id="mobile" value="" /><em id="phone"></em></div>
+					<div><label for=""></label><input type="checkbox" name="" id="check" value="" /><em>设为默认</em></div>
+					<div class="im"><label for="mobile">注：</label>如果收货人，并非您本人，您可<a href="">点击添加联系信息</a></div>
+					<a id="ok" href="javascript:;">确认收货人信息</a>
+				</div>
+				<h4>配送信息</h4>
+				<div class="send-info">
+					<div class="send-left">
+						<h5>配送方式</h5>
+						<input type="radio" checked="checked" /><span>快递，全场满199元免费送</span>
+					</div>
+					<div class="send-right">
+						<h5>配送时间</h5>
+						<ul>
+							<li><input type="radio" checked="checked" />工作日，双休日与假日均可送货</li>
+							<li><input type="radio" />只工作日送货(双休日，假期不用送)</li>
+							<li><input type="radio" />只双休日，假期送货(工作日不用送)</li>
+							<li><input type="radio" />白天没人，尽量安排晚上送货</li>
+						</ul>
+					</div>
+					<div class="send-three">
+						<a href="">确认配送信息</a>
+					</div>
+				</div>
+				<h4>支付方式</h4>
+				<div class="pay-method">
+					<p>您也可以同时:</p>
+					<div class="card"><input type="checkbox" id="money" /><label for="money">用礼品卡冲抵金额</label></div>
+					<div class="card line"><input type="radio" id="money" /><label for="money">在线支付</label><span>即时到帐，支持绝大部分银行借记卡、信用卡和支付平台 </span></div>
+					<div class="card band"><input type="radio" id="money" /><label for="money">银行汇款</label><span>您需提交订单后再到银行把货款汇入走秀账户，<font>汇款成功后请联系客服告知汇款信息以便及时为您备货</font>，到账后将为您发货，到账时间1-5个工作日！</span></div>
+					<div class="card sended"><input type="radio" id="money" /><label for="money">货到付款</label><span>先送货再收款，请您在快递人员送货时付款</span></div>
+					<div class="paymoney">
+						<a href="javascript:;">确认支付方式</a>
+					</div>
+				</div>
+				<h4 class="list">商品清单<span>[修改]</span></h4>
+				<div class="goods-list">
+				<table id="goods-info" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<th colspan="2" style="border-left: 1px solid #d6d3d3;">商品</th>
+						<th>购买价</th>
+						<th  style="border-right: 1px solid #d6d3d3;">数量</th>
+					</tr>
+					<tr><td colspan="4"></td></tr>
+					<!--商品信息-->
+				</table>
+				</div>
+				<div class="free">
+					<span></span>
+				</div>
+				<div class="tree">
+					<div class="tree-left">
+						<ol>
+							<li>使用优惠券/礼包/打折<i></i></li>
+							<div class="box1">
+								<div class="box1-header">
+									<ol>
+										<li><a class="active" href="">优惠券/礼包</a></li>
+									</ol>
+									<span></span>
+								</div>
+								<div class="main-con">
+								<div class="low">暂无可使用优惠券/</div>
+								<p><a href="">激活优惠券/礼包</a></p>
+								<div class="cart-btn">
+									<a href="">确认使用 </a>
+									<a href="">不适用优惠券</a><span>每笔订单，限用一张优惠券,且不能同时享受购物车又会促销活动.</span>
+								</div>
+								</div>
+							</div>
+							<li>客户留言<i></i></li>
+							<div class="box2">
+								<textarea name="" rows="" placeholder="如果你对包装有特殊要求，请在此留言" cols=""></textarea>
+							</div>
+							<li>索取发票<i></i></li>
+							<div class="box3">
+								<h4>发票信息<span></span></h4>
+								<div class="fp">
+									<form action="">
+									<div><label for="">发票金额：</label>￥699 <i></i> </div>
+									<div><label for="">发票抬头：</label><input type="text" placeholder="请填写发票抬头" /></div>
+									<div><label for="">发票类型：</label>
+										<select name="" id="">
+											<option selected="" value="">请选择</option>
+											<option value="">眼镜</option>
+											<option value="">化妆品</option>
+											<option value="">鞋帽</option>
+											<option value="">饰品</option>
+											<option value="">服装</option>
+											<option value="">箱包</option>
+											<option value="">手袋</option>
+											<option value="">皮带</option>
+											<option value="">手表/钟表</option>
+										</select>
+									</div>
+									<div>
+										<label for=""></label>
+									<a class="sure" href="">确认 </a>
+									<a class="cancel" href="">取消</a>
+									</div>
+									</form>
+								</div>
+								<div class="tit-info">海外部分商品，不具发票，开票余额不包括优惠券</div>
+							</div>
+						</ol>
+					</div>
+					<div class="tree-right">
+						<p>商品总价：<span>￥699</span></p>
+						<p>运费: <span>0</span> </p>
+						<p>订单应付金额：<span>9999</span></p>
+						<hr />
+						<a href=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--购物车主体内容-->
+	<div class="copy-right">
+		<p>Copyright © 2008- <script>document.write(new Date().getFullYear());</script>版权所有<a href="">粤ICP备07502993号</a> 
+		<a href=""><img src="img/c_08.jpg" alt="" />粤公网安备 44030402000804号</a></p>
+	</div>
+	<script src="dist/lib/jQuery1.8.3.js"></script>
+	<script src="dist/lib/common.js"></script>
+	<script src="dist/js/buy-list.js"> </script>
+</body>
+</html>
