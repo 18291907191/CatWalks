@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="走秀网，全球时尚在线百货商城，中国第一大国际时尚品牌线上零售机构。一折起销售正品国际品牌女装、男装、奢侈品、化妆品、运动、休闲、箱包、鞋、家居、配饰等商品，支持货到付款，7天无条件退换货保障. />
+	<meta name="keywords" content="网上购物,网上商城,货到付款,名品打折网,奢侈品,LV,GUCCI,PRADA,CK,兰蔻,雅诗兰黛,倩碧,耐克,阿迪达斯,李宁,ZARA,百丽,走秀网,走秀网官网" />
+	<title>用户登录-走秀网</title>
+	<link rel="shortcut icon" href="icon-font/favicon.ico" />
+	<link rel="stylesheet" href="dist/css/login.css" />
+</head>
+<body>
+	<!--头部-->
+	<div class="header">
+		<div class="header_con">
+			<h1>
+				<a href="index.html"><img src="img/logo_mini.png" alt="XIU.COM走秀！" title="'秀'出你的风采!" /></a>
+			</h1>
+		</div>
+	</div>
+	<!--内容-->
+	<div class="section">
+		<div class="section_con">
+			<form action="javascript:;">
+				<div class="login_panel">
+					<ul class="login_tab">
+						<li><a href="javascript:;" class="active">短信登录</a>
+							<a href="javascript:;">密码登录</a>
+						</li>
+					</ul>
+					<!--输入框-->
+					<div class="login_form">
+						<!--短信登录-->
+						<ul class="active"> 
+							<li>
+								<label><b></b><span class="tit_info"></span></label>
+							</li>
+							<li>
+								<input required="required" id="username" type="text" />
+								<label for="username">手机号码</label>
+							</li>
+							<li>
+								<label><b></b><span></span></label>
+							</li>
+							<li><input required="required" id="authCode_phone" type="text" />
+								<label for="authCode_phone">短信验证码</label>
+								<a class="phone_login_authCode" href="javascript:;">获取验证码</a>
+							</li>
+							<li class="findpwd"><a class="findpwda" href="javascript:;">找回密码</a></li>
+							<li><button class="login_btn logina" id="login_Btn a" type="submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button></li>
+						</ul>
+						<!--密码登录-->
+						<ul> 
+							<li>
+								<label><b></b><span class="tit_info2"></span></label>
+							</li>
+							<li>
+								<input required="required" id="admin" type="text" />
+								<label for="admin">手机号/邮箱/用户名</label>
+							</li>
+							<li>
+								<label><b></b><span></span></label>
+							</li>
+							<li><input required="required" id="authCode_phone c" class="authCode_phone" type="text" />
+								<label for="authCode_phone c">密码</label>
+							</li>
+							<li class="findpwd">
+								<div class="reg">
+								<a href="javascript:;">找回密码</a>&nbsp;|&nbsp; <a href="" title="短信登录即可注册">账号注册</a>
+								</div>
+							</li>
+							<li><button class="login_btn" id="login_Btn" type="submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button></li>
+						</ul>
+						<!--手机扫码登录-->
+						<ul>
+							<h3 class="smdl_hd">手机扫码登陆</h3>
+							<div class="smdl"><img src="img/smdl.bmp" alt="二维码已失效" />
+							</div>
+							<p class="app">请打开 <a href="">走秀APP</a>，扫一扫登录</p>
+							<p class="reg2">登录代表您已同意<a href="">《走秀网用户协议》</a></p>
+						</ul>
+					</div>
+					<div class="login_extinfo">
+						<dl>
+							<dt><span class="company">合作网站账号登陆</span></dt>
+							<dd>
+								<ol class="login_extinfo_bd">
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+								</ol>
+							</dd>
+						</dl>
+					</div>
+					<div class="login_agreement">
+						登录代表您已同意<a href="javascript:;">《走秀网用户协议》</a>
+					</div>
+					<!--扫码登录-->
+					<a class="saoma" href="javascript:;"></a>
+					<a class="erm" href="javascript;;"></a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+		<a href="">关于走秀</a>
+		<b>|</b>
+		<a href="">媒体报道</a>
+		<b>|</b>
+		<a href="">品牌招商</a>
+		<b>|</b>
+		<a href="">加入走秀</a>
+		<b>|</b>
+		<a href="">友情连接</a>
+		<b>|</b>
+		<a href="">联系我们</a>
+		<b>|</b>
+		<a href="">帮助中心</a>
+		<b>|</b>
+		<a href="">网站地图</a>
+	</div>
+	<div class="footer_copyright">
+		Copyright © 2008-
+		<script>document.write(new Date().getFullYear())</script>版权所有 . 粤ICP备07502993号
+		<a href="" target="_blank"><img src="img/wab.png" width="14px" height="14px" />粤公网安备 44030402000804号</a>
+	</div>
+	<script src="dist/lib/jQuery1.8.3.js"></script>
+	<script>
+//		设置选项卡效果
+//		获取所有的tab标签
+		var oTab = $('.login_tab li').find('a');
+//		获取所有的ul
+		var oUl = $('.login_form').find('ul');
+		oTab.click(function(){
+			$(this).addClass("active").siblings().removeClass("active"); //class="active"
+			var _index=$(this).index(); //获取序列号
+			oUl.eq(_index).show().siblings().hide();
+		})
+////		扫码登录
+//		$('.saoma').click(function(){
+//			$('.login_form').css({display:'none'});
+//			$('.login_tab').css({display:'none'});
+//			oUl.css({display:'none'});
+//			
+//		})
+//		文本框焦点设置
+		$('input').focus(function(){
+			$(this).siblings().css({top:-10});
+		})
+		$('#username').blur(function(){
+			//			表单验证
+			var phoneNum = $(this).val();
+			var regPhoneNum = /^[1][3,4,5,7,8][0-9]{9}$/;
+			if(!regPhoneNum.test(phoneNum)){
+				$('.tit_info').html('请输入正确的手机号!');
+			} else {
+				$('.tit_info').html('');
+			}
+		});
+
+		$('.phone_login_authCode').click(function(){
+			var phoneNum = $('#username').val();
+			var regPhoneNum = /^[1][3,4,5,7,8][0-9]{9}$/;
+			if(!regPhoneNum.test(phoneNum)){
+				$('.tit_info').html('请输入正确的手机号!');
+			} else  {
+				$('.tit_info').html('');
+				var timer =30;
+				var time = setInterval(function(){
+					timer--;
+					$('.phone_login_authCode').html(timer+'s');
+					if(timer <= 0){
+						clearInterval(time);
+						$('.phone_login_authCode').html('重新发送');
+					}
+				},1000);
+			}
+		})
+//		隐藏合作登陆方式
+		$('.company'). click(function(){
+			$('.login_extinfo_bd').slideUp(1000,'linear');
+		})
+		$('#admin').blur(function(){
+			var une = $(this).val();
+//			账号验证
+			var account = (/^[a-zA-z]\w{3,15}$/)+(/^[1][3,4,5,7,8][0-9]{9}$/)+(/^[1][3,4,5,7,8][0-9]{9}$/);
+//			手机号验证
+			<!--var regPhoneNum = /^[1][3,4,5,7,8][0-9]{9}$/;-->
+//			邮箱验证
+			<!--var email = /^[1][3,4,5,7,8][0-9]{9}$/;-->
+			if(!account.test(une)){
+				$('.tit_info2').html('账号格式输出有误!');
+			}else {
+			$('.tit_info2').html('');
+			}
+		})
+		$('#login_Btn').click(function(){
+			$('#admin').blur();
+		})
+		$('.logina').click(function(){
+			$('#username').blur();
+		})
+	</script>
+</body>
+</html>
